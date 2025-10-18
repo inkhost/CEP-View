@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEP View</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="background">
+    <header>
+      <h1><i class="fas fa-map-marker-alt"></i> CEP View</h1>
+      <p>Consulta rápida de endereços por CEP</p>
+    </header>
+
+    <main>
+      <div class="card">
+        <form id="cep-form">
+          <label for="cep"><i class="fas fa-search-location"></i> Digite o CEP:</label>
+          <input type="text" id="cep" name="cep" maxlength="8" placeholder="Ex: 01001000" required />
+          <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+        </form>
+
+        <div id="loader" class="loader hidden"></div>
+        <section id="result" aria-live="polite"></section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 CEP View. Todos os direitos reservados.</p>
+      <nav>
+        <a href="privacidade.html"><i class="fas fa-user-shield"></i> Política de Privacidade</a> |
+        <a href="termos.html"><i class="fas fa-file-contract"></i> Termos de Uso</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
